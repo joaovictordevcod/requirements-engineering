@@ -32,7 +32,7 @@ As siglas identificam autores e revisores em todo o repositório.
 | Arquivo              | um único PDF: `INF0339-APS-Sul.pdf` |
 | Onde                 | tarefa da disciplina no SIGAA |
 | Prazo                | _consultar a tarefa no SIGAA e registrar aqui_ |
-| Documento de trabalho | Google Docs — _inserir link (acesso restrito à equipe)_ |
+| Documento de trabalho | Google Docs — [_inserir link (acesso restrito à equipe)_](https://docs.google.com/document/d/15i2m6unj2w0gHVdLEZf59Tzuz_QhPO0yYf5WKd123v4/edit?usp=sharing) |
 
 ## Como o trabalho está organizado
 
