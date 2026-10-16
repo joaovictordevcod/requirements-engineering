@@ -5,14 +5,12 @@ documento. Ele atende à **regra 5** do enunciado (todos são autores e
 revisores, e ninguém revisa o próprio item) e ao critério individual *"Autoria
 e revisão"*.
 
-> **Status desta matriz:** a equipe decidiu a divisão em **3 duplas** e a
-> composição delas. Ainda falta confirmar duas coisas na reunião de abertura:
+> **Status desta matriz:** o que já foi definido e o que ainda falta.
 >
-> - o sentido do anel de revisão;
-> - a distribuição dos responsáveis principais (coluna *Resp.*), que hoje é só
->   uma proposta.
->
-> Registre a aprovação na ata.
+> - **Definido pela equipe:** a divisão em **3 duplas**, a composição delas e o
+>   anel de revisão **A→B→C→A** (reunião de 2026-10-14).
+> - **Ainda é proposta:** a distribuição dos responsáveis principais (coluna
+>   *Resp.*). Aprovar com a equipe e registrar na ata.
 
 ## 1. Duplas
 
@@ -38,9 +36,8 @@ Dupla C ───────▶ Dupla A ───────▶ Dupla B ──
 | Dupla B (evolução) | **Dupla A** | Quem conhece o app atual verifica se a evolução se encaixa nele sem conflito. |
 | Dupla C (integração) | **Dupla B** | Quem modelou o domínio mais complexo confere se os requisitos de qualidade, a rastreabilidade e os checklists cobrem a evolução. |
 
-> ⚠️ O documento de diretrizes da equipe traz os dois sentidos de anel em
-> respostas diferentes. O sentido acima (C→A→B→C) é o que aparece na maior parte
-> do documento. **Confirmar na reunião de abertura.**
+> Anel confirmado na reunião de 2026-10-14: **A→B→C→A**, ou seja, A revisa B,
+> B revisa C e C revisa A. É o mesmo ciclo do diagrama acima.
 
 ### Responsável principal de cada item
 
