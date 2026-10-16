@@ -2,8 +2,8 @@
 
 - **ID:** <!-- ex.: AN-03 -->
 - **Issue:** Closes #<!-- número -->
-- **Autor(a):** <!-- sigla -->
-- **Revisor(a):** <!-- sigla, diferente do autor; marque-o(a) como reviewer deste PR -->
+- **Dupla autora:** <!-- A, B ou C --> · **Responsável principal:** <!-- sigla --> · **Coautor(a):** <!-- sigla -->
+- **Dupla revisora:** <!-- C revisa A, A revisa B, B revisa C; marque os dois membros como reviewers deste PR -->
 
 ## O que mudou
 

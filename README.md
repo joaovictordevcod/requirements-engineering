@@ -63,8 +63,10 @@ Cada **item de informação** do documento (ex.: glossário, modelo conceitual,
 casos de uso) segue o mesmo ciclo:
 
 1. **Issue.** Abrir uma issue com o modelo *Item de informação*, indicando o ID
-   do item, o autor e o revisor definidos em
-   [gestao/itens-de-informacao.md](gestao/itens-de-informacao.md).
+   do item, a dupla autora (com o responsável principal) e a dupla revisora
+   definidas em [gestao/itens-de-informacao.md](gestao/itens-de-informacao.md).
+   O trabalho é dividido em 3 duplas (A: app atual; B: avaliação de UA;
+   C: integração e validação), com revisão cruzada em anel.
 2. **Branch.** O autor trabalha em uma branch `item/<ID>-<slug>`, por exemplo
    `item/AN-03-modelo-conceitual`.
 3. **Pull request.** O autor abre um PR que referencia a issue e preenche o

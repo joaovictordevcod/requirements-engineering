@@ -41,8 +41,8 @@ lista completa fica na seção Referências.
 | Identificação | |
 |---|---|
 | **ID** | `AN-03` |
-| **Autoria** | João Victor Borges Tavares |
-| **Revisão** | Nicole Cabral Lopes Dantas |
+| **Autoria** | Dupla B: <responsável principal>; <coautor(a)> |
+| **Revisão** | Dupla A: <revisor(a) 1>; <revisor(a) 2> |
 | **Versão / data** | 1.0, 2026-11-05 |
 | **Técnica / linguagem** | Diagrama de classes conceitual, UML 2.5.1 |
 | **Depende de** | `AN-01`, `EL-04` |

@@ -8,7 +8,7 @@ diagramas.
 modelos/
 ├── _estilo.puml        estilo comum, incluído em todos os diagramas
 ├── analise/            AN-02 objetivos · AN-03 modelo conceitual · AN-04 casos de uso
-└── especificacao/      ES-06 sequência, atividade e estados
+└── especificacao/      ES-05 e ES-06: sequência, atividade e estados
 ```
 
 ## Convenções
@@ -23,7 +23,7 @@ modelos/
   @startuml
   !include ../_estilo.puml
   ' Item: AN-03 — Modelo conceitual do domínio
-  ' Autoria: JVBT · Revisão: NCLD
+  ' Autoria: Dupla B (resp. <sigla>, coautor <sigla>) · Revisão: Dupla A
   ' Relacionados: AN-01 (glossário), ES-02, ES-04
   title Modelo conceitual — Avaliação de qualidade de UA
   ...

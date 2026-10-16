@@ -72,15 +72,53 @@ Um item só muda para `Aprovado` quando cumpre **todas** as condições abaixo:
 - [ ] O revisor designado aprovou o PR, ou resolveu os comentários no Docs.
 - [ ] O status foi atualizado em [itens-de-informacao.md](itens-de-informacao.md).
 
-## 5. Papéis rotativos
+## 5. Duplas e papéis
 
-| Papel | Responsabilidade | Rodízio |
-|-------|------------------|---------|
-| Facilitador(a) | Conduz a reunião, controla o tempo e a pauta | a cada reunião |
-| Secretário(a) | Escreve a ata e a publica em `gestao/atas/` em até 24 h | a cada reunião |
-| Integrador(a) da fase | Garante a consistência entre os itens da fase no Docs | a cada fase |
+O conteúdo é dividido entre **3 duplas temáticas** (A: app atual; B: avaliação
+de UA; C: integração e validação), com revisão cruzada em anel. A composição, os
+itens e o anel de revisão estão em
+[itens-de-informacao.md](itens-de-informacao.md).
 
-Ordem do rodízio (alfabética): CFS → GBR → JVBT → MMRA → NCLD → TICB → CFS…
+Além das duplas, há dois **papéis de gestão rotativos**, trocados a cada
+2 semanas, conforme as diretrizes da equipe:
+
+| Papel | Responsabilidade |
+|-------|------------------|
+| Gestor(a) de rastreabilidade e formatação | Ver detalhes abaixo. |
+| Guardião(ã) de atas, registros e riscos | Ver detalhes abaixo. |
+
+**Gestor(a) de rastreabilidade e formatação:**
+
+- aplicar o [guia de estilo](../docs/documento/guia-de-estilo.md): fonte,
+  espaçamento sem linhas vazias, legendas;
+- manter a coluna de status de [itens-de-informacao.md](itens-de-informacao.md);
+- consolidar o PDF final `INF0339-APS-Sul.pdf`.
+
+**Guardião(ã) de atas, registros e riscos:**
+
+- registrar a presença e as atividades das reuniões e dos check-ins;
+- garantir que cada ata seja publicada em até 24 h;
+- atualizar o [registro de riscos](riscos.md) e o
+  [registro de comunicações](comunicacoes/registro-de-comunicacoes.md).
+
+Em cada reunião, as funções de **facilitador(a)**, que conduz a pauta e o
+tempo, e de **secretário(a)**, que escreve a ata, também giram entre os
+membros.
+
+| Período | Gestor(a) de rastreabilidade e formatação | Guardião(ã) de atas, registros e riscos |
+|---------|-------------------------------------------|-----------------------------------------|
+| Semanas 1–2 | _sigla_ | _sigla_ |
+| Semanas 3–4 | _sigla_ | _sigla_ |
+| Semanas 5–6 | _sigla_ | _sigla_ |
+
+**Rotina semanal (sprint), conforme as diretrizes da equipe:**
+
+1. **Início da semana (assíncrono):** cada membro trabalha nos itens em que é
+   responsável principal.
+2. **Meio da semana (síncrono):** reunião em que os autores apresentam os itens
+   para a dupla revisora.
+3. **Fim da semana (assíncrono):** os autores aplicam as correções, os revisores
+   aprovam o PR e o item é registrado no Docs com o cabeçalho de autoria.
 
 ## 6. Integração final (fase 5)
 

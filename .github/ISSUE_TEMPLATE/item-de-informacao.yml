@@ -6,9 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Uma issue por item de informação. Autor e revisor devem bater com a
+        Uma issue por item de informação. Duplas e responsável devem bater com a
         [matriz autor × revisor](../blob/main/gestao/itens-de-informacao.md).
-        O revisor **nunca** pode ser o autor (regra 5).
+        A dupla revisora **nunca** pode ser a autora (regra 5).
+        Anel de revisão: C revisa A, A revisa B, B revisa C.
   - type: dropdown
     id: secao
     attributes:
@@ -29,18 +30,33 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: autor
+    id: dupla_autora
     attributes:
-      label: Autor(a)
+      label: Dupla autora
+      options:
+        - A (app atual)
+        - B (avaliação de UA)
+        - C (integração e validação)
+        - A + B (somente VA-03)
+    validations:
+      required: true
+  - type: dropdown
+    id: responsavel
+    attributes:
+      label: Responsável principal
+      description: Membro da dupla autora que conduz o item; o outro é coautor.
       options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
     validations:
       required: true
   - type: dropdown
-    id: revisor
+    id: dupla_revisora
     attributes:
-      label: Revisor(a)
-      description: Diferente do autor.
-      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+      label: Dupla revisora
+      description: Diferente da dupla autora (C revisa A, A revisa B, B revisa C).
+      options:
+        - A (app atual)
+        - B (avaliação de UA)
+        - C (integração e validação)
     validations:
       required: true
   - type: textarea

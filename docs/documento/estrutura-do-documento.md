@@ -47,9 +47,9 @@ INTRODUÇÃO (curta, sem numeração ou como seção 0 — ver nota 1)
   3.2 Requisitos funcionais — avaliação de qualidade de UA ..... ES-02
   3.3 Requisitos de qualidade .................................. ES-03
   3.4 Regras de negócio ........................................ ES-04
-  3.5 Especificação de casos de uso ............................ ES-05
-  3.6 Modelos de comportamento ................................. ES-06
-  3.7 Protótipos de interface .................................. ES-07
+  3.5 Casos de uso e comportamento — app atual ................ ES-05
+  3.6 Casos de uso e comportamento — avaliação de UA ........... ES-06
+  3.7 Protótipos de interface — avaliação de UA ................ ES-07
   3.8 Matriz de rastreabilidade ................................ ES-08
 
 4 VALIDAÇÃO DE REQUISITOS

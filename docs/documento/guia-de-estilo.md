@@ -36,7 +36,7 @@ nos arquivos deste repositório.
 | `STK-nn` | Stakeholder | EL-01 | `STK-04` (Discente) |
 | `NEC-nn` | Necessidade de stakeholder | EL-06 | `NEC-07` |
 | `OBJ-nn` | Objetivo | AN-02 | `OBJ-02` |
-| `UC-nn` | Caso de uso | AN-04, ES-05 | `UC-09` |
+| `UC-nn` | Caso de uso | AN-04, ES-05, ES-06 | `UC-09` |
 | `RF-nn` | Requisito funcional | ES-01, ES-02 | `RF-23` |
 | `RNF-nn` | Requisito não funcional (qualidade) | ES-03 | `RNF-05` |
 | `RN-nn` | Regra de negócio | ES-04 | `RN-03` |
