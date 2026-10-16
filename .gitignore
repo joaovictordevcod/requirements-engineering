@@ -1,0 +1,19 @@
+# Saídas geradas (a fonte da verdade são os .puml)
+build/
+
+# PDFs de trabalho e exportações locais — a entrega vai pelo SIGAA
+*.pdf
+
+# Respostas brutas com dados pessoais (versionar só a versão anonimizada)
+elicitacao/**/*-bruto.*
+elicitacao/**/*.xlsx
+elicitacao/**/*.csv
+!elicitacao/**/*-anonimizado.csv
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~

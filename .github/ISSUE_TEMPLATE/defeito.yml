@@ -1,0 +1,53 @@
+name: Defeito em requisito
+description: Problema encontrado em revisão ou inspeção (alimenta o relatório VA-03)
+title: "[DEF] <resumo do problema>"
+labels: ["defeito"]
+body:
+  - type: input
+    id: item
+    attributes:
+      label: Item / requisito afetado
+      placeholder: "ex.: ES-02 / RF-57"
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de defeito (características da ISO/IEC/IEEE 29148)
+      options:
+        - Ambíguo
+        - Incompleto
+        - Incorreto
+        - Inconsistente com outro item
+        - Não verificável
+        - Não singular (mais de uma necessidade)
+        - Desnecessário / sem origem
+        - Inviável
+        - Sem rastreabilidade
+        - Forma (ortografia, formatação, legenda)
+    validations:
+      required: true
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade
+      options:
+        - Alta — compromete a compreensão ou a corretude
+        - Média — gera dúvida ou retrabalho
+        - Baixa — forma ou estilo
+    validations:
+      required: true
+  - type: dropdown
+    id: encontrado_por
+    attributes:
+      label: Encontrado por
+      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição e evidência
+      description: Trecho afetado, por que é um defeito e sugestão de correção.
+    validations:
+      required: true

@@ -1,0 +1,78 @@
+name: Item de informação
+description: Autoria de um item do documento (EL, AN, ES ou VA), conforme gestao/itens-de-informacao.md
+title: "[XX-nn] <Título do item>"
+labels: ["item"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Uma issue por item de informação. Autor e revisor devem bater com a
+        [matriz autor × revisor](../blob/main/gestao/itens-de-informacao.md).
+        O revisor **nunca** pode ser o autor (regra 5).
+  - type: dropdown
+    id: secao
+    attributes:
+      label: Seção do documento
+      options:
+        - 1 Elicitação
+        - 2 Análise
+        - 3 Especificação
+        - 4 Validação
+        - Apêndice
+    validations:
+      required: true
+  - type: input
+    id: id
+    attributes:
+      label: ID do item
+      placeholder: "ex.: AN-03"
+    validations:
+      required: true
+  - type: dropdown
+    id: autor
+    attributes:
+      label: Autor(a)
+      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+    validations:
+      required: true
+  - type: dropdown
+    id: revisor
+    attributes:
+      label: Revisor(a)
+      description: Diferente do autor.
+      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo do item
+      description: Que pergunta este item responde e por que é necessário?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Depende de / usado por
+      placeholder: |
+        Depende de: AN-01, EL-04
+        Usado por: ES-02, ES-04
+  - type: input
+    id: prazo
+    attributes:
+      label: Prazo combinado para o rascunho
+      placeholder: AAAA-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: pronto
+    attributes:
+      label: Definição de pronto
+      value: |
+        - [ ] Bloco de identificação preenchido (modelo de item de informação)
+        - [ ] Termos conferidos com o glossário (AN-01)
+        - [ ] IDs únicos e referências cruzadas válidas
+        - [ ] Figuras/tabelas com legenda e citadas no texto
+        - [ ] Referências ABNT incluídas em referencias/referencias.md
+        - [ ] Revisão aprovada pelo(a) revisor(a)
+        - [ ] Copiado para o Google Docs e status atualizado na matriz

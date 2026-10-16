@@ -1,0 +1,66 @@
+' Estilo compartilhado por todos os diagramas da Equipe Sul.
+' Uso: na primeira linha após @startuml, inclua
+'   !include ../_estilo.puml
+' Não altere cores ou fontes diagrama a diagrama; ajuste aqui (critério 8.5).
+
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam shadowing false
+skinparam roundCorner 6
+skinparam monochrome false
+skinparam backgroundColor white
+skinparam ArrowColor #333333
+skinparam DefaultTextAlignment center
+skinparam linetype ortho
+skinparam dpi 150
+
+skinparam class {
+  BackgroundColor #F7F7F7
+  BorderColor #333333
+  AttributeIconSize 0
+}
+hide circle
+hide empty methods
+
+skinparam usecase {
+  BackgroundColor #F7F7F7
+  BorderColor #333333
+}
+skinparam actorStyle awesome
+skinparam rectangle {
+  BorderColor #333333
+}
+skinparam package {
+  BackgroundColor #FFFFFF
+  BorderColor #777777
+}
+
+skinparam sequence {
+  ParticipantBackgroundColor #F7F7F7
+  ParticipantBorderColor #333333
+  LifeLineBorderColor #777777
+  ActorBorderColor #333333
+  ActorBackgroundColor #F7F7F7
+}
+hide footbox
+
+skinparam actor {
+  BackgroundColor #F7F7F7
+  BorderColor #333333
+}
+
+skinparam activity {
+  BackgroundColor #F7F7F7
+  BorderColor #333333
+  DiamondBackgroundColor #FFFFFF
+}
+
+skinparam state {
+  BackgroundColor #F7F7F7
+  BorderColor #333333
+}
+
+skinparam note {
+  BackgroundColor #FFFBE6
+  BorderColor #B3A100
+}
