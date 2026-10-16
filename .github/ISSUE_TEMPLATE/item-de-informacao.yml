@@ -45,7 +45,7 @@ body:
     attributes:
       label: Responsável principal
       description: Membro da dupla autora que conduz o item; o outro é coautor.
-      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+      options: [CFS, GBR, HEN, JVBT, MMRA, NCLD]
     validations:
       required: true
   - type: dropdown

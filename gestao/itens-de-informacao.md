@@ -5,17 +5,25 @@ documento. Ele atende à **regra 5** do enunciado (todos são autores e
 revisores, e ninguém revisa o próprio item) e ao critério individual *"Autoria
 e revisão"*.
 
-> **Status desta matriz:** a divisão em **3 duplas** foi decidida pela equipe.
-> Falta preencher a composição das duplas e confirmar o sentido do anel de
-> revisão na reunião de abertura. Registre a aprovação na ata.
+> **Status desta matriz:** a equipe decidiu a divisão em **3 duplas** e a
+> composição delas. Ainda falta confirmar duas coisas na reunião de abertura:
+>
+> - o sentido do anel de revisão;
+> - a distribuição dos responsáveis principais (coluna *Resp.*), que hoje é só
+>   uma proposta.
+>
+> Registre a aprovação na ata.
 
 ## 1. Duplas
 
+As diretrizes da equipe chamam as duplas de Grupo 1, Grupo 2 e Grupo 3. Neste
+repositório, elas são as Duplas A, B e C.
+
 | Dupla | Frente de trabalho | Integrantes |
 |-------|--------------------|-------------|
-| **A** | **App atual**: as 8 funcionalidades existentes (Segurança, Rádio, Guia Estudantil, Eventos, Notícias, RU, Locais, Apps UFG) | _a definir_ · _a definir_ |
-| **B** | **Nova evolução**: avaliação de qualidade das UAs (dimensões, elementos, questões, cálculo das notas) | _a definir_ · _a definir_ |
-| **C** | **Integração e validação**: técnicas de elicitação, vocabulário único, requisitos de qualidade do app inteiro, rastreabilidade e validação | _a definir_ · _a definir_ |
+| **A** (Grupo 1) | **App atual**: as 8 funcionalidades existentes (Segurança, Rádio, Guia Estudantil, Eventos, Notícias, RU, Locais, Apps UFG) | Maria Michelle Rodrigues Amaral (MMRA) · Gustavo Bittencourt Ribeiro (GBR) |
+| **B** (Grupo 2) | **Nova evolução**: avaliação de qualidade das UAs (dimensões, elementos, questões, cálculo das notas) | Nicole Cabral Lopes Dantas (NCLD) · Cali Freitas Silva (CFS) |
+| **C** (Grupo 3) | **Integração e validação**: técnicas de elicitação, vocabulário único, requisitos de qualidade do app inteiro, rastreabilidade e validação | João Victor Borges Tavares (JVBT) · Hendrew (HEN) |
 
 ### Anel de revisão
 
@@ -81,12 +89,12 @@ pontos nos critérios de avaliação:
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| EL-01 | Identificação de stakeholders | Ver nota EL-01 abaixo. | A | | C | — | A fazer | |
-| EL-02 | Plano de elicitação | Técnicas escolhidas e justificadas (SWEBOK cap. 1), fontes, cronograma e roteiros. Padrão comum às duas frentes. | C | | B | EL-01 | A fazer | |
-| EL-03 | Inventário do app atual | Ver nota EL-03 abaixo. | A | | C | EL-02 | A fazer | |
-| EL-04 | Análise de documentos | Ver nota EL-04 abaixo. | B | | A | EL-02 | A fazer | |
-| EL-05 | Questionário e entrevistas | Instrumento aplicado à comunidade sobre a avaliação de UA (as 4 dimensões e os elementos), com consolidação anonimizada das respostas. | B | | A | EL-01, EL-02 | A fazer | |
-| EL-06 | Registro de necessidades | Consolidação das necessidades brutas (`NEC-xx`) das duas frentes, com a origem de cada uma (stakeholder e técnica). É a entrada da análise. | C | | B | EL-03, EL-04, EL-05 | A fazer | |
+| EL-01 | Identificação de stakeholders | Ver nota EL-01 abaixo. | A | MMRA | C | — | A fazer | |
+| EL-02 | Plano de elicitação | Técnicas escolhidas e justificadas (SWEBOK cap. 1), fontes, cronograma e roteiros. Padrão comum às duas frentes. | C | JVBT | B | EL-01 | A fazer | |
+| EL-03 | Inventário do app atual | Ver nota EL-03 abaixo. | A | GBR | C | EL-02 | A fazer | |
+| EL-04 | Análise de documentos | Ver nota EL-04 abaixo. | B | CFS | A | EL-02 | A fazer | |
+| EL-05 | Questionário e entrevistas | Instrumento aplicado à comunidade sobre a avaliação de UA (as 4 dimensões e os elementos), com consolidação anonimizada das respostas. | B | NCLD | A | EL-01, EL-02 | A fazer | |
+| EL-06 | Registro de necessidades | Consolidação das necessidades brutas (`NEC-xx`) das duas frentes, com a origem de cada uma (stakeholder e técnica). É a entrada da análise. | C | HEN | B | EL-03, EL-04, EL-05 | A fazer | |
 
 **Notas da Elicitação:**
 
@@ -109,12 +117,12 @@ pontos nos critérios de avaliação:
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| AN-01 | Glossário | Termos do domínio com definição única, para o app atual e a evolução. Ex.: UA, regional, dimensão de qualidade, elemento educacional, questão, avaliação, nota, área do conhecimento. | C | | B | EL-03, EL-04 | A fazer | |
-| AN-02 | Modelo de objetivos | Objetivos dos stakeholders e como o app contribui para eles, em iStar 2.0 ou árvore de objetivos. Inclui por que avaliar UAs. | A | | C | EL-01, EL-06 | A fazer | |
-| AN-03 | Modelo conceitual do domínio (integrado) | Ver nota AN-03 abaixo. | B | | A | AN-01 | A fazer | |
-| AN-04 | Diagrama de casos de uso | Atores e casos de uso do app inteiro, com a versão atual e a evolução em pacotes separados. A Dupla B fornece os casos de uso da evolução. | A | | C | EL-03, EL-06 | A fazer | |
-| AN-05 | Conflitos e consistência | Conflitos entre necessidades e entre o app atual e a evolução, com a resolução adotada. Ex.: anonimato × evitar avaliações duplicadas. | C | | B | EL-06, AN-03, AN-04 | A fazer | |
-| AN-06 | Priorização | Classificação MoSCoW (ou outra técnica justificada) das necessidades e dos requisitos, com o critério e os participantes. | C | | B | EL-06, AN-05 | A fazer | |
+| AN-01 | Glossário | Termos do domínio com definição única, para o app atual e a evolução. Ex.: UA, regional, dimensão de qualidade, elemento educacional, questão, avaliação, nota, área do conhecimento. | C | JVBT | B | EL-03, EL-04 | A fazer | |
+| AN-02 | Modelo de objetivos | Objetivos dos stakeholders e como o app contribui para eles, em iStar 2.0 ou árvore de objetivos. Inclui por que avaliar UAs. | A | MMRA | C | EL-01, EL-06 | A fazer | |
+| AN-03 | Modelo conceitual do domínio (integrado) | Ver nota AN-03 abaixo. | B | CFS | A | AN-01 | A fazer | |
+| AN-04 | Diagrama de casos de uso | Atores e casos de uso do app inteiro, com a versão atual e a evolução em pacotes separados. A Dupla B fornece os casos de uso da evolução. | A | GBR | C | EL-03, EL-06 | A fazer | |
+| AN-05 | Conflitos e consistência | Conflitos entre necessidades e entre o app atual e a evolução, com a resolução adotada. Ex.: anonimato × evitar avaliações duplicadas. | C | HEN | B | EL-06, AN-03, AN-04 | A fazer | |
+| AN-06 | Priorização | Classificação MoSCoW (ou outra técnica justificada) das necessidades e dos requisitos, com o critério e os participantes. | C | JVBT | B | EL-06, AN-05 | A fazer | |
 
 **Nota AN-03.** Um único diagrama de classes conceitual, com dicionário de
 dados, para o app inteiro.
@@ -128,14 +136,14 @@ dados, para o app inteiro.
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| ES-01 | Requisitos funcionais — app atual | `RF-01` a `RF-49` das 8 categorias, no padrão da ISO/IEC/IEEE 29148, com prioridade e origem. | A | | C | AN-04, AN-06 | A fazer | |
-| ES-02 | Requisitos funcionais — avaliação de UA | `RF-50` a `RF-99`: registrar avaliação e consultar as notas por UA, por área do CNPq e da UFG. | B | | A | AN-03, AN-04, AN-06 | A fazer | |
-| ES-03 | Requisitos de qualidade (app inteiro) | Ver nota ES-03 abaixo. | C | | B | EL-06, AN-06 | A fazer | |
-| ES-04 | Regras de negócio | Ver nota ES-04 abaixo. | B | | A | AN-03, AN-05 | A fazer | |
-| ES-05 | Casos de uso e comportamento — app atual | Especificação detalhada dos casos de uso prioritários do app atual (pré-condições, fluxos, pós-condições), com diagramas de atividade ou sequência quando o fluxo justificar. | A | | C | AN-04, ES-01 | A fazer | |
-| ES-06 | Casos de uso e comportamento — avaliação de UA | Especificação detalhada dos casos de uso da evolução, com diagramas de sequência (registrar avaliação, consultar notas) e de estados da Avaliação. | B | | A | AN-04, ES-02, ES-04 | A fazer | |
-| ES-07 | Protótipos de interface — avaliação de UA | Telas da evolução (avaliar UA, ver notas por UA, por área e da UFG) em baixa ou média fidelidade, ligadas aos casos de uso do ES-06. | B | | A | ES-02, ES-06 | A fazer | |
-| ES-08 | Matriz de rastreabilidade | `NEC` → `RF`/`RNF`/`RN` → `UC` → modelos → critérios de aceitação, com links para os itens. | C | | B | ES-01 a ES-07, VA-04 | A fazer | |
+| ES-01 | Requisitos funcionais — app atual | `RF-01` a `RF-49` das 8 categorias, no padrão da ISO/IEC/IEEE 29148, com prioridade e origem. | A | MMRA | C | AN-04, AN-06 | A fazer | |
+| ES-02 | Requisitos funcionais — avaliação de UA | `RF-50` a `RF-99`: registrar avaliação e consultar as notas por UA, por área do CNPq e da UFG. | B | NCLD | A | AN-03, AN-04, AN-06 | A fazer | |
+| ES-03 | Requisitos de qualidade (app inteiro) | Ver nota ES-03 abaixo. | C | HEN | B | EL-06, AN-06 | A fazer | |
+| ES-04 | Regras de negócio | Ver nota ES-04 abaixo. | B | CFS | A | AN-03, AN-05 | A fazer | |
+| ES-05 | Casos de uso e comportamento — app atual | Especificação detalhada dos casos de uso prioritários do app atual (pré-condições, fluxos, pós-condições), com diagramas de atividade ou sequência quando o fluxo justificar. | A | GBR | C | AN-04, ES-01 | A fazer | |
+| ES-06 | Casos de uso e comportamento — avaliação de UA | Especificação detalhada dos casos de uso da evolução, com diagramas de sequência (registrar avaliação, consultar notas) e de estados da Avaliação. | B | NCLD | A | AN-04, ES-02, ES-04 | A fazer | |
+| ES-07 | Protótipos de interface — avaliação de UA | Telas da evolução (avaliar UA, ver notas por UA, por área e da UFG) em baixa ou média fidelidade, ligadas aos casos de uso do ES-06. | B | CFS | A | ES-02, ES-06 | A fazer | |
+| ES-08 | Matriz de rastreabilidade | `NEC` → `RF`/`RNF`/`RN` → `UC` → modelos → critérios de aceitação, com links para os itens. | C | JVBT | B | ES-01 a ES-07, VA-04 | A fazer | |
 
 **Notas da Especificação:**
 
@@ -159,11 +167,11 @@ dados, para o app inteiro.
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| VA-01 | Plano de validação | Técnicas (inspeção, prototipação, critérios de aceitação), participantes, critérios de saída. | C | | B | — | A fazer | |
-| VA-02 | Checklist de inspeção | Checklist baseado nas características de requisitos bem formados da ISO/IEC/IEEE 29148. Ver nota VA-02 abaixo. | C | | B | VA-01 | A fazer | |
-| VA-03 | Relatório de inspeção | Execução do VA-02 em validação cruzada: a Dupla A inspeciona a frente B e a Dupla B inspeciona a frente A. Registra os defeitos (`DEF-xx`): item, tipo, severidade, quem encontrou, correção e status. | A + B | | C | VA-02, seção 3 | A fazer | |
-| VA-04 | Critérios de aceitação | Critérios verificáveis (Dado/Quando/Então) para os requisitos prioritários das duas frentes. | B | | A | ES-01, ES-02, ES-04 | A fazer | |
-| VA-05 | Validação por protótipo | Sessões com usuários usando o ES-07: roteiro, participantes anonimizados, achados e mudanças geradas. Feita por quem **não** construiu o protótipo. | A | | C | ES-07 | A fazer | |
+| VA-01 | Plano de validação | Técnicas (inspeção, prototipação, critérios de aceitação), participantes, critérios de saída. | C | HEN | B | — | A fazer | |
+| VA-02 | Checklist de inspeção | Checklist baseado nas características de requisitos bem formados da ISO/IEC/IEEE 29148. Ver nota VA-02 abaixo. | C | JVBT | B | VA-01 | A fazer | |
+| VA-03 | Relatório de inspeção | Execução do VA-02 em validação cruzada: a Dupla A inspeciona a frente B e a Dupla B inspeciona a frente A. Registra os defeitos (`DEF-xx`): item, tipo, severidade, quem encontrou, correção e status. | A + B | GBR + CFS | C | VA-02, seção 3 | A fazer | |
+| VA-04 | Critérios de aceitação | Critérios verificáveis (Dado/Quando/Então) para os requisitos prioritários das duas frentes. | B | NCLD | A | ES-01, ES-02, ES-04 | A fazer | |
+| VA-05 | Validação por protótipo | Sessões com usuários usando o ES-07: roteiro, participantes anonimizados, achados e mudanças geradas. Feita por quem **não** construiu o protótipo. | A | MMRA | C | ES-07 | A fazer | |
 
 **Nota VA-02.** Características verificadas pelo checklist:
 
@@ -203,6 +211,19 @@ Elas precisam continuar valendo depois de qualquer troca.
 
 - [x] Todas as duplas são autoras e revisoras, logo todos os membros também.
 - [x] Nenhum item é revisado por uma dupla que seja autora dele.
-- [ ] Dentro de cada dupla, os dois membros são responsáveis principais por
-  quantidades parecidas de itens (diferença máxima de 1). Conferir depois de
-  preencher a coluna *Resp.*
+- [x] Dentro de cada dupla, os dois membros são responsáveis principais por
+  quantidades parecidas de itens (diferença máxima de 1).
+
+### Responsáveis principais
+
+Esta distribuição é uma **proposta** para a reunião de abertura. O VA-03 conta
+para os dois responsáveis.
+
+| Membro | Dupla | Responsável principal por | Total |
+|--------|:-----:|---------------------------|:-----:|
+| MMRA | A | EL-01, AN-02, ES-01, VA-05 | 4 |
+| GBR  | A | EL-03, AN-04, ES-05, VA-03 | 4 |
+| NCLD | B | EL-05, ES-02, ES-06, VA-04 | 4 |
+| CFS  | B | EL-04, AN-03, ES-04, ES-07, VA-03 | 5 |
+| JVBT | C | EL-02, AN-01, AN-06, ES-08, VA-02 | 5 |
+| HEN  | C | EL-06, AN-05, ES-03, VA-01 | 4 |

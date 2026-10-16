@@ -13,8 +13,8 @@ CABEÇALHO (primeira página)
   Atividade Prática Supervisionada (APS): Especificação de requisitos do app Minha UFG
   Equipe Sul
   Autores (ordem alfabética, somente quem contribuiu):
-    Cali Freitas Silva; Gustavo Bittencourt Ribeiro; João Victor Borges Tavares;
-    Maria Michelle Rodrigues Amaral; Nicole Cabral Lopes Dantas; Tales Ian Costa Barkema
+    Cali Freitas Silva; Gustavo Bittencourt Ribeiro; Hendrew <sobrenome>;
+    João Victor Borges Tavares; Maria Michelle Rodrigues Amaral; Nicole Cabral Lopes Dantas
   Goiânia, <data da entrega>
 
 SUMÁRIO

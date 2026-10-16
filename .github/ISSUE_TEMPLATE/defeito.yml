@@ -41,7 +41,7 @@ body:
     id: encontrado_por
     attributes:
       label: Encontrado por
-      options: [CFS, GBR, JVBT, MMRA, NCLD, TICB]
+      options: [CFS, GBR, HEN, JVBT, MMRA, NCLD]
     validations:
       required: true
   - type: textarea

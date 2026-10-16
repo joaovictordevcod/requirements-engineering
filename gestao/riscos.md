@@ -51,3 +51,4 @@ adjetivos nem julgamentos.
 | Data | Reunião (ata) | Alterações |
 |------|---------------|------------|
 | | | Registro inicial dos riscos R-01 a R-09 |
+| _data a registrar_ | | R-07 ocorreu: Hendrew substituiu Tales Ian Costa Barkema. Os itens foram redistribuídos nas 3 duplas, mantendo as restrições da matriz. |

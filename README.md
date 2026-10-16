@@ -16,14 +16,26 @@ Em ordem alfabética, como deve constar no cabeçalho do documento entregue.
 
 | Sigla | Integrante                      | GitHub |
 |-------|---------------------------------|--------|
-| CFS   | Cali Freitas Silva              | —      |
-| GBR   | Gustavo Bittencourt Ribeiro     | —      |
-| JVBT  | João Victor Borges Tavares      | [@joaovictordevcod](https://github.com/joaovictordevcod) |
-| MMRA  | Maria Michelle Rodrigues Amaral | —      |
-| NCLD  | Nicole Cabral Lopes Dantas      | —      |
-| TICB  | Tales Ian Costa Barkema         | —      |
+| Sigla | Integrante                      | Dupla | GitHub |
+|-------|---------------------------------|:-----:|--------|
+| CFS   | Cali Freitas Silva              | B | —      |
+| GBR   | Gustavo Bittencourt Ribeiro     | A | —      |
+| HEN   | Hendrew _(nome completo a registrar)_ | C | —      |
+| JVBT  | João Victor Borges Tavares      | C | [@joaovictordevcod](https://github.com/joaovictordevcod) |
+| MMRA  | Maria Michelle Rodrigues Amaral | A | —      |
+| NCLD  | Nicole Cabral Lopes Dantas      | B | —      |
 
-As siglas identificam autores e revisores em todo o repositório.
+As siglas identificam autores e revisores em todo o repositório. As duplas são:
+
+- **A:** app atual;
+- **B:** avaliação de UA;
+- **C:** integração e validação.
+
+Os detalhes estão em [gestao/itens-de-informacao.md](gestao/itens-de-informacao.md).
+
+> Hendrew entrou na Equipe Sul no lugar de Tales Ian Costa Barkema, que aparece
+> na lista original do enunciado. Ver o
+> [registro de comunicações](gestao/comunicacoes/registro-de-comunicacoes.md).
 
 ## Entrega
 
