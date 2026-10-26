@@ -25,6 +25,7 @@ Antes de incluir, confira os dados bibliográficos na fonte.
 | Obra | Uso provável |
 |------|--------------|
 | ISO/IEC 25010:2023, modelo de qualidade de produto | ES-03, requisitos de qualidade |
+| OLIVEIRA, J. L. *Requisitos de Software: conceitos fundamentais; técnicas e ferramentas; SQuaRE, família ISO 25000*. Slides de aula, INF0339, INF/UFG, 2026 | Todos os itens que usarem classificações, técnicas ou definições dos slides |
 | OMG. *Unified Modeling Language (UML)*, versão 2.5.1, 2017 | AN-03, AN-04, ES-05, ES-06 |
 | DALPIAZ, F.; FRANCH, X.; HORKOFF, J. *iStar 2.0 Language Guide*, 2016 | AN-02, se o modelo de objetivos usar iStar |
 | CNPq. *Tabela de Áreas do Conhecimento* | EL-04, AN-03, ES-04 |
