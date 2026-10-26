@@ -62,6 +62,7 @@ requirements-engineering/
 │   ├── riscos.md                registro e monitoramento de riscos da equipe
 │   ├── atas/                    atas de reuniões (viram apêndice do documento)
 │   └── comunicacoes/            registro de comunicações relevantes (idem)
+├── itens/                rascunhos dos itens de informação, revisados por PR
 ├── elicitacao/           evidências brutas: capturas do app, questionários, respostas, notas
 ├── modelos/              diagramas em PlantUML (fonte versionada) e estilo compartilhado
 ├── referencias/          lista de referências bibliográficas no padrão ABNT
