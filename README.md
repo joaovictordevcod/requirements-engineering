@@ -93,6 +93,46 @@ Itens escritos diretamente no Google Docs usam **Sugestões** para as alteraçõ
 e **comentários** com `@menção` ao revisor. O revisor resolve os comentários, e
 o histórico de versões do Docs fica como evidência.
 
+### Criar as issues dos itens
+
+O script `scripts/criar-issues.sh` lê a matriz em
+[gestao/itens-de-informacao.md](gestao/itens-de-informacao.md) e cria no GitHub:
+
+- **uma issue por item**, com a dupla autora, o responsável, os coautores, a
+  dupla revisora, as dependências e a definição de pronto;
+- **os rótulos** `item`, `dupla A`, `dupla B` e `dupla C`;
+- **os marcos** das 4 seções do documento.
+
+O script pode ser rodado de novo sem problema: itens que já têm issue são
+pulados.
+
+Ele precisa do [GitHub CLI](https://cli.github.com) autenticado. No Windows:
+
+```bash
+winget install --id GitHub.cli
+```
+
+```bash
+gh auth login
+```
+
+Para ver o que seria criado sem criar nada:
+
+```bash
+SIMULAR=1 ./scripts/criar-issues.sh
+```
+
+Para criar de verdade:
+
+```bash
+./scripts/criar-issues.sh
+```
+
+As issues só são atribuídas (*assignee*) a quem tem o usuário do GitHub
+preenchido no topo do script. Quando cada membro informar o seu usuário,
+complete a lista e atribua as issues pelo site, ou edite o script e use
+`gh issue edit`.
+
 ### Convenções
 
 - **Commits:** mensagens em português, no formato `tipo(escopo): descrição`.
