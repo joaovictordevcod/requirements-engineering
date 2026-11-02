@@ -114,7 +114,7 @@ pontos nos critérios de avaliação:
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| AN-01 | Glossário | Termos do domínio com definição única, para o app atual e a evolução. Ex.: UA, regional, dimensão de qualidade, elemento educacional, questão, avaliação, nota, área do conhecimento. | C | JVBT | B | EL-03, EL-04 | A fazer | [#7](https://github.com/joaovictordevcod/requirements-engineering/issues/7) |
+| AN-01 | Glossário | Termos do domínio com definição única, para o app atual e a evolução. Ex.: UA, regional, dimensão de qualidade, elemento educacional, questão, avaliação, nota, área do conhecimento. | C | JVBT | B | EL-03, EL-04 | Em revisão | [#7](https://github.com/joaovictordevcod/requirements-engineering/issues/7) |
 | AN-02 | Modelo de objetivos | Objetivos dos stakeholders e como o app contribui para eles, em iStar 2.0 ou árvore de objetivos. Inclui por que avaliar UAs. | A | MMRA | C | EL-01, EL-06 | A fazer | [#8](https://github.com/joaovictordevcod/requirements-engineering/issues/8) |
 | AN-03 | Modelo conceitual do domínio (integrado) | Ver nota AN-03 abaixo. | B | CFS | A | AN-01 | A fazer | [#9](https://github.com/joaovictordevcod/requirements-engineering/issues/9) |
 | AN-04 | Diagrama de casos de uso | Atores e casos de uso do app inteiro, com a versão atual e a evolução em pacotes separados. A Dupla B fornece os casos de uso da evolução. | A | GBR | C | EL-03, EL-06 | A fazer | [#10](https://github.com/joaovictordevcod/requirements-engineering/issues/10) |
