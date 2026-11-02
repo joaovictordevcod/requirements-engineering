@@ -17,19 +17,19 @@ SIMULAR="${SIMULAR:-0}"
 # Usuário do GitHub de cada membro. Preencha quando souber; vazio = sem assignee.
 declare -A USUARIO=(
   [JVBT]="joaovictordevcod"
-  [HEN]=""
-  [MMRA]=""
-  [GBR]=""
-  [NCLD]=""
+  [TICB]="HendrewThalles"
+  [MMRA]="mrmichelledev"
+  [GBR]="GustavoBitt"
+  [NCLD]="nicolecab"
   [CFS]=""
 )
 
 declare -A NOME=(
-  [JVBT]="João Victor" [HEN]="Hendrew" [MMRA]="Maria Michelle"
+  [JVBT]="João Victor" [TICB]="Tales" [MMRA]="Maria Michelle"
   [GBR]="Gustavo" [NCLD]="Nicole" [CFS]="Cali"
 )
 declare -A MEMBROS=(
-  [A]="MMRA GBR" [B]="NCLD CFS" [C]="JVBT HEN"
+  [A]="MMRA GBR" [B]="NCLD CFS" [C]="JVBT TICB"
 )
 declare -A SECAO=(
   [EL]="1 Elicitação" [AN]="2 Análise" [ES]="3 Especificação" [VA]="4 Validação"

@@ -14,16 +14,14 @@ evolução proposta de **avaliação de qualidade das Unidades Acadêmicas (UA)*
 
 Em ordem alfabética, como deve constar no cabeçalho do documento entregue.
 
-| Sigla | Integrante                      | GitHub |
-|-------|---------------------------------|--------|
 | Sigla | Integrante                      | Dupla | GitHub |
 |-------|---------------------------------|:-----:|--------|
 | CFS   | Cali Freitas Silva              | B | —      |
-| GBR   | Gustavo Bittencourt Ribeiro     | A | —      |
-| HEN   | Hendrew _(nome completo a registrar)_ | C | —      |
+| GBR   | Gustavo Bittencourt Ribeiro     | A | [@GustavoBitt](https://github.com/GustavoBitt) |
 | JVBT  | João Victor Borges Tavares      | C | [@joaovictordevcod](https://github.com/joaovictordevcod) |
-| MMRA  | Maria Michelle Rodrigues Amaral | A | —      |
-| NCLD  | Nicole Cabral Lopes Dantas      | B | —      |
+| MMRA  | Maria Michelle Rodrigues Amaral | A | [@mrmichelledev](https://github.com/mrmichelledev) |
+| NCLD  | Nicole Cabral Lopes Dantas      | B | [@nicolecab](https://github.com/nicolecab) |
+| TICB  | Tales Ian Costa Barkema (apelido: Hendrew) | C | [@HendrewThalles](https://github.com/HendrewThalles) |
 
 As siglas identificam autores e revisores em todo o repositório. As duplas são:
 
@@ -32,10 +30,6 @@ As siglas identificam autores e revisores em todo o repositório. As duplas são
 - **C:** integração e validação.
 
 Os detalhes estão em [gestao/itens-de-informacao.md](gestao/itens-de-informacao.md).
-
-> Hendrew entrou na Equipe Sul no lugar de Tales Ian Costa Barkema, que aparece
-> na lista original do enunciado. Ver o
-> [registro de comunicações](gestao/comunicacoes/registro-de-comunicacoes.md).
 
 ## Entrega
 

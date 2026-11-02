@@ -21,7 +21,7 @@ repositório, elas são as Duplas A, B e C.
 |-------|--------------------|-------------|
 | **A** (Grupo 1) | **App atual**: as 8 funcionalidades existentes (Segurança, Rádio, Guia Estudantil, Eventos, Notícias, RU, Locais, Apps UFG) | Maria Michelle Rodrigues Amaral (MMRA) · Gustavo Bittencourt Ribeiro (GBR) |
 | **B** (Grupo 2) | **Nova evolução**: avaliação de qualidade das UAs (dimensões, elementos, questões, cálculo das notas) | Nicole Cabral Lopes Dantas (NCLD) · Cali Freitas Silva (CFS) |
-| **C** (Grupo 3) | **Integração e validação**: técnicas de elicitação, vocabulário único, requisitos de qualidade do app inteiro, rastreabilidade e validação | João Victor Borges Tavares (JVBT) · Hendrew (HEN) |
+| **C** (Grupo 3) | **Integração e validação**: técnicas de elicitação, vocabulário único, requisitos de qualidade do app inteiro, rastreabilidade e validação | João Victor Borges Tavares (JVBT) · Tales Ian Costa Barkema, "Hendrew" (TICB) |
 
 ### Anel de revisão
 
@@ -91,7 +91,7 @@ pontos nos critérios de avaliação:
 | EL-03 | Inventário do app atual | Ver nota EL-03 abaixo. | A | GBR | C | EL-02 | A fazer | [#3](https://github.com/joaovictordevcod/requirements-engineering/issues/3) |
 | EL-04 | Análise de documentos | Ver nota EL-04 abaixo. | B | CFS | A | EL-02 | A fazer | [#4](https://github.com/joaovictordevcod/requirements-engineering/issues/4) |
 | EL-05 | Questionário e entrevistas | Instrumento aplicado à comunidade sobre a avaliação de UA (as 4 dimensões e os elementos), com consolidação anonimizada das respostas. | B | NCLD | A | EL-01, EL-02 | A fazer | [#5](https://github.com/joaovictordevcod/requirements-engineering/issues/5) |
-| EL-06 | Registro de necessidades | Consolidação das necessidades brutas (`NEC-xx`) das duas frentes, com a origem de cada uma (stakeholder e técnica). É a entrada da análise. | C | HEN | B | EL-03, EL-04, EL-05 | A fazer | [#6](https://github.com/joaovictordevcod/requirements-engineering/issues/6) |
+| EL-06 | Registro de necessidades | Consolidação das necessidades brutas (`NEC-xx`) das duas frentes, com a origem de cada uma (stakeholder e técnica). É a entrada da análise. | C | TICB | B | EL-03, EL-04, EL-05 | A fazer | [#6](https://github.com/joaovictordevcod/requirements-engineering/issues/6) |
 
 **Notas da Elicitação:**
 
@@ -118,7 +118,7 @@ pontos nos critérios de avaliação:
 | AN-02 | Modelo de objetivos | Objetivos dos stakeholders e como o app contribui para eles, em iStar 2.0 ou árvore de objetivos. Inclui por que avaliar UAs. | A | MMRA | C | EL-01, EL-06 | A fazer | [#8](https://github.com/joaovictordevcod/requirements-engineering/issues/8) |
 | AN-03 | Modelo conceitual do domínio (integrado) | Ver nota AN-03 abaixo. | B | CFS | A | AN-01 | A fazer | [#9](https://github.com/joaovictordevcod/requirements-engineering/issues/9) |
 | AN-04 | Diagrama de casos de uso | Atores e casos de uso do app inteiro, com a versão atual e a evolução em pacotes separados. A Dupla B fornece os casos de uso da evolução. | A | GBR | C | EL-03, EL-06 | A fazer | [#10](https://github.com/joaovictordevcod/requirements-engineering/issues/10) |
-| AN-05 | Conflitos e consistência | Conflitos entre necessidades e entre o app atual e a evolução, com a resolução adotada. Ex.: anonimato × evitar avaliações duplicadas. | C | HEN | B | EL-06, AN-03, AN-04 | A fazer | [#11](https://github.com/joaovictordevcod/requirements-engineering/issues/11) |
+| AN-05 | Conflitos e consistência | Conflitos entre necessidades e entre o app atual e a evolução, com a resolução adotada. Ex.: anonimato × evitar avaliações duplicadas. | C | TICB | B | EL-06, AN-03, AN-04 | A fazer | [#11](https://github.com/joaovictordevcod/requirements-engineering/issues/11) |
 | AN-06 | Priorização | Classificação MoSCoW (ou outra técnica justificada) das necessidades e dos requisitos, com o critério e os participantes. | C | JVBT | B | EL-06, AN-05 | A fazer | [#12](https://github.com/joaovictordevcod/requirements-engineering/issues/12) |
 
 **Nota AN-03.** Um único diagrama de classes conceitual, com dicionário de
@@ -135,7 +135,7 @@ dados, para o app inteiro.
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
 | ES-01 | Requisitos funcionais — app atual | `RF-01` a `RF-49` das 8 categorias, no padrão da ISO/IEC/IEEE 29148, com prioridade e origem. | A | MMRA | C | AN-04, AN-06 | A fazer | [#13](https://github.com/joaovictordevcod/requirements-engineering/issues/13) |
 | ES-02 | Requisitos funcionais — avaliação de UA | `RF-50` a `RF-99`: registrar avaliação e consultar as notas por UA, por área do CNPq e da UFG. | B | NCLD | A | AN-03, AN-04, AN-06 | A fazer | [#14](https://github.com/joaovictordevcod/requirements-engineering/issues/14) |
-| ES-03 | Requisitos de qualidade (app inteiro) | Ver nota ES-03 abaixo. | C | HEN | B | EL-06, AN-06 | A fazer | [#15](https://github.com/joaovictordevcod/requirements-engineering/issues/15) |
+| ES-03 | Requisitos de qualidade (app inteiro) | Ver nota ES-03 abaixo. | C | TICB | B | EL-06, AN-06 | A fazer | [#15](https://github.com/joaovictordevcod/requirements-engineering/issues/15) |
 | ES-04 | Regras de negócio | Ver nota ES-04 abaixo. | B | CFS | A | AN-03, AN-05 | A fazer | [#16](https://github.com/joaovictordevcod/requirements-engineering/issues/16) |
 | ES-05 | Casos de uso e comportamento — app atual | Especificação detalhada dos casos de uso prioritários do app atual (pré-condições, fluxos, pós-condições), com diagramas de atividade ou sequência quando o fluxo justificar. | A | GBR | C | AN-04, ES-01 | A fazer | [#17](https://github.com/joaovictordevcod/requirements-engineering/issues/17) |
 | ES-06 | Casos de uso e comportamento — avaliação de UA | Especificação detalhada dos casos de uso da evolução, com diagramas de sequência (registrar avaliação, consultar notas) e de estados da Avaliação. | B | NCLD | A | AN-04, ES-02, ES-04 | A fazer | [#18](https://github.com/joaovictordevcod/requirements-engineering/issues/18) |
@@ -164,7 +164,7 @@ dados, para o app inteiro.
 
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
-| VA-01 | Plano de validação | Técnicas (inspeção, prototipação, critérios de aceitação), participantes, critérios de saída. | C | HEN | B | — | A fazer | [#21](https://github.com/joaovictordevcod/requirements-engineering/issues/21) |
+| VA-01 | Plano de validação | Técnicas (inspeção, prototipação, critérios de aceitação), participantes, critérios de saída. | C | TICB | B | — | A fazer | [#21](https://github.com/joaovictordevcod/requirements-engineering/issues/21) |
 | VA-02 | Checklist de inspeção | Checklist baseado nas características de requisitos bem formados da ISO/IEC/IEEE 29148. Ver nota VA-02 abaixo. | C | JVBT | B | VA-01 | A fazer | [#22](https://github.com/joaovictordevcod/requirements-engineering/issues/22) |
 | VA-03 | Relatório de inspeção | Execução do VA-02 em validação cruzada: a Dupla A inspeciona a frente B e a Dupla B inspeciona a frente A. Registra os defeitos (`DEF-xx`): item, tipo, severidade, quem encontrou, correção e status. | A + B | GBR + CFS | C | VA-02, seção 3 | A fazer | [#23](https://github.com/joaovictordevcod/requirements-engineering/issues/23) |
 | VA-04 | Critérios de aceitação | Critérios verificáveis (Dado/Quando/Então) para os requisitos prioritários das duas frentes. | B | NCLD | A | ES-01, ES-02, ES-04 | A fazer | [#24](https://github.com/joaovictordevcod/requirements-engineering/issues/24) |
@@ -223,4 +223,4 @@ para os dois responsáveis.
 | NCLD | B | EL-05, ES-02, ES-06, VA-04 | 4 |
 | CFS  | B | EL-04, AN-03, ES-04, ES-07, VA-03 | 5 |
 | JVBT | C | EL-02, AN-01, AN-06, ES-08, VA-02 | 5 |
-| HEN  | C | EL-06, AN-05, ES-03, VA-01 | 4 |
+| TICB | C | EL-06, AN-05, ES-03, VA-01 | 4 |

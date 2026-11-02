@@ -144,11 +144,7 @@ Os critérios detalhados estão em
 
 ### Composição da Equipe Sul
 
-A lista original do enunciado tem estes membros:
-
 Cali Freitas Silva · Gustavo Bittencourt Ribeiro · João Victor Borges Tavares ·
 Maria Michelle Rodrigues Amaral · Nicole Cabral Lopes Dantas · Tales Ian Costa
-Barkema.
-
-**Composição atual:** Hendrew entrou no lugar de Tales Ian Costa Barkema. A
-lista vigente fica no [README](../../README.md).
+Barkema. Tales usa o apelido Hendrew.
+No documento entregue, vale sempre o nome completo.
