@@ -21,7 +21,7 @@ declare -A USUARIO=(
   [MMRA]="mrmichelledev"
   [GBR]="GustavoBitt"
   [NCLD]="nicolecab"
-  [CFS]=""
+  [CFS]="acalinto"
 )
 
 declare -A NOME=(

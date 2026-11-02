@@ -16,7 +16,7 @@ Em ordem alfabética, como deve constar no cabeçalho do documento entregue.
 
 | Sigla | Integrante                      | Dupla | GitHub |
 |-------|---------------------------------|:-----:|--------|
-| CFS   | Cali Freitas Silva              | B | —      |
+| CFS   | Cali Freitas Silva              | B | [@acalinto](https://github.com/acalinto) |
 | GBR   | Gustavo Bittencourt Ribeiro     | A | [@GustavoBitt](https://github.com/GustavoBitt) |
 | JVBT  | João Victor Borges Tavares      | C | [@joaovictordevcod](https://github.com/joaovictordevcod) |
 | MMRA  | Maria Michelle Rodrigues Amaral | A | [@mrmichelledev](https://github.com/mrmichelledev) |
