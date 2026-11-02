@@ -1,8 +1,7 @@
 # Plano de trabalho da Equipe Sul
 
-> **Prazo de entrega:** _consultar a tarefa no SIGAA e registrar aqui_.
-> As datas das fases abaixo são calculadas de trás para frente a partir do prazo,
-> e devem ser preenchidas na reunião de abertura.
+> **Prazo de entrega:** quarta-feira, **04/11/2026**, na tarefa do SIGAA.
+> As datas das fases 4 e 5 seguem o cronograma de validação do VA-01.
 
 ## 1. Fases
 
@@ -12,15 +11,16 @@ para a especificação. As datas marcam quando cada fase precisa estar
 
 | Fase | Objetivo | Itens | Marco de saída | Data-alvo |
 |------|----------|-------|----------------|-----------|
-| 0. Organização | Alinhar regras, aprovar a matriz autor × revisor, combinar a cadência | — | Ata da reunião de abertura com a matriz aprovada | |
-| 1. Elicitação  | Levantar o app atual e as necessidades da evolução | EL-01 a EL-06 | Registro de necessidades (EL-06) revisado | |
-| 2. Análise     | Entender, estruturar e priorizar | AN-01 a AN-06 | Modelo conceitual e casos de uso aprovados | |
-| 3. Especificação | Escrever requisitos e modelos detalhados | ES-01 a ES-08 | Todos os RF/RNF/RN com ID, prioridade e origem | |
-| 4. Validação   | Inspecionar, validar com usuários, corrigir | VA-01 a VA-05 | Nenhum defeito de severidade alta em aberto | |
-| 5. Integração e entrega | Montar o documento único, revisar a forma e exportar o PDF | todos | `INF0339-APS-Sul.pdf` enviado no SIGAA | |
+| 0. Organização | Alinhar regras, aprovar a matriz autor × revisor, combinar a cadência | — | Ata da reunião de abertura com a matriz aprovada | 14/10 (reunião de quarta) |
+| 1. Elicitação  | Levantar o app atual e as necessidades da evolução | EL-01 a EL-06 | Registro de necessidades (EL-06) revisado | 02/11 |
+| 2. Análise     | Entender, estruturar e priorizar | AN-01 a AN-06 | Modelo conceitual e casos de uso aprovados | 02/11 |
+| 3. Especificação | Escrever requisitos e modelos detalhados | ES-01 a ES-08 | Todos os RF/RNF/RN com ID, prioridade e origem | 02/11 (congelamento das versões para a inspeção) |
+| 4. Validação   | Inspecionar, validar com usuários, corrigir | VA-01 a VA-05 | Nenhum defeito de severidade alta em aberto | 02/11 a 04/11 (manhã): inspeção individual, consolidação em 03/11 e verificação das correções |
+| 5. Integração e entrega | Montar o documento único, revisar a forma e exportar o PDF | todos | `INF0339-APS-Sul.pdf` enviado no SIGAA | 04/11 |
 
-**Folga recomendada:** entregar a versão final no SIGAA pelo menos **2 dias antes**
-do prazo.
+**Folga:** com o prazo em 04/11, não há mais folga de 2 dias. Envie o PDF no
+SIGAA assim que a montagem terminar, sem esperar o fim do dia, e confira o
+arquivo enviado.
 
 ## 2. Cadência de trabalho
 
