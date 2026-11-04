@@ -140,7 +140,7 @@ dados, para o app inteiro.
 | ES-05 | Casos de uso e comportamento — app atual | Especificação detalhada dos casos de uso prioritários do app atual (pré-condições, fluxos, pós-condições), com diagramas de atividade ou sequência quando o fluxo justificar. | A | GBR | C | AN-04, ES-01 | A fazer | [#17](https://github.com/joaovictordevcod/requirements-engineering/issues/17) |
 | ES-06 | Casos de uso e comportamento — avaliação de UA | Especificação detalhada dos casos de uso da evolução, com diagramas de sequência (registrar avaliação, consultar notas) e de estados da Avaliação. | B | NCLD | A | AN-04, ES-02, ES-04 | A fazer | [#18](https://github.com/joaovictordevcod/requirements-engineering/issues/18) |
 | ES-07 | Protótipos de interface — avaliação de UA | Telas da evolução (avaliar UA, ver notas por UA, por área e da UFG) em baixa ou média fidelidade, ligadas aos casos de uso do ES-06. | B | CFS | A | ES-02, ES-06 | A fazer | [#19](https://github.com/joaovictordevcod/requirements-engineering/issues/19) |
-| ES-08 | Matriz de rastreabilidade | `NEC` → `RF`/`RNF`/`RN` → `UC` → modelos → critérios de aceitação, com links para os itens. | C | JVBT | B | ES-01 a ES-07, VA-04 | A fazer | [#20](https://github.com/joaovictordevcod/requirements-engineering/issues/20) |
+| ES-08 | Matriz de rastreabilidade | `NEC` → `RF`/`RNF`/`RN` → `UC` → modelos → critérios de aceitação, com links para os itens. | C | JVBT | B | ES-01 a ES-07, VA-04 | Em revisão | [#20](https://github.com/joaovictordevcod/requirements-engineering/issues/20) |
 
 **Notas da Especificação:**
 
