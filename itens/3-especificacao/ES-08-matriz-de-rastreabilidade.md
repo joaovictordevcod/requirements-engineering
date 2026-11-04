@@ -5,8 +5,8 @@
 | **ID** | `ES-08` |
 | **Autoria** | Dupla C: João Victor Borges Tavares (responsável); Tales Ian Costa Barkema |
 | **Revisão** | Dupla B: Nicole Cabral Lopes Dantas; Cali Freitas Silva |
-| **Versão / data** | 0.1 (rascunho), 2026-11-02 |
-| **Técnica / linguagem** | Matriz de rastreabilidade bidirecional, vertical e horizontal (OLIVEIRA, 2026) |
+| **Versão / data** | 0.2 (ajustes da revisão), 2026-11-04 |
+| **Técnica / linguagem** | Matriz de rastreabilidade bidirecional, vertical e horizontal (OLIVEIRA, 2026a) |
 | **Depende de** | `EL-03`, `EL-04`, `EL-06`, `AN-03`, `AN-05`, `AN-06`, `ES-01` a `ES-07`, `VA-04` |
 | **Usado por** | `VA-01` (critério de saída CS-05 e atividade VAL-04), `VA-03` |
 
@@ -26,7 +26,7 @@ ainda não está ligado.
 ## 3.8.1 Critério
 
 Os slides da disciplina definem a matriz de rastreabilidade com dois eixos
-(OLIVEIRA, 2026):
+(OLIVEIRA, 2026a):
 
 - **Vertical:** da fonte do requisito até os elementos que o realizam. Neste
   documento, a cadeia é:
@@ -54,11 +54,15 @@ correspondente, a célula mostra **"—"**, e a lacuna é registrada na seção 
 
 **Prioridade** de cada requisito: a proposta do `AN-06`.
 
-**Legenda de status** (OLIVEIRA, 2026):
+**Legenda de status.** Os status são os mesmos do `ES-02` (OLIVEIRA, 2026a):
 
+- **Identificado:** o requisito existe, mas o enunciado ainda depende de uma
+  ambiguidade da fonte;
 - **Definido:** escrito no item, ainda não validado;
-- **Validado:** aprovado na inspeção do VA-03;
-- **A confirmar:** depende de decisão registrada no AN-05 ou no AN-06.
+- **Validado:** aprovado na inspeção do VA-03.
+
+As pendências (`TBD-EXP`), as ambiguidades (`AMB-EXP`) e os conflitos (`CNF`)
+que afetam cada requisito ficam em uma coluna própria, e não no status.
 
 ## 3.8.2 Matriz vertical — avaliação de qualidade de UA
 
@@ -67,22 +71,35 @@ elementos que o realizam. As ligações vêm do `EL-06` (Tabela 4), do `ES-02`
 (Tabela 12), do `ES-07` (Tabela 3) e do `VA-04` (Tabela 11). Os trechos T1 a T8
 são os do Apêndice A analisados no `EL-04`.
 
+A coluna "Pendências" liga cada requisito às pendências do `EL-05` e às
+ambiguidades do `EL-04`, como prevê o `EL-05` (Tabela 5). Ela copia a Tabela 11
+do `VA-04`, sem as pendências que o docente respondeu no e-mail de 03/11/2026
+(OLIVEIRA, 2026b):
+
+- `TBD-EXP-11` e `AMB-EXP-03`: a nota da UA é a média das notas finais das
+  Avaliações da UA;
+- `TBD-EXP-12`, em parte: as médias são aritméticas simples. Continua em aberto
+  quais valores entram na média da Área de Conhecimento;
+- `TBD-EXP-18`: as Avaliações são anônimas;
+- `TBD-EXP-04`, em parte: a mesma pessoa pode avaliar a mesma UA mais de uma
+  vez. Periodicidade e edição continuam em aberto.
+
 **Tabela 1 – Rastreabilidade vertical dos requisitos funcionais da avaliação de UA**
 
-| Requisito | Fonte (EL-04) | Necessidade | Regra | Dados (AN-03) | Caso de uso | Tela | Critérios | Prior. | Status |
-|---|---|---|---|---|---|---|---|---|---|
-| RF-AVA-01 | T1, T4 | NEC-AVA-01 | — | RD-AVA-01, 06 | UC-AVA-01 | TL-AVA-01 | CA-AVA-01.1, 01.2 | Must | Definido |
-| RF-AVA-02 | T2, T3, T5, T7 | NEC-AVA-02, 03 | — | RD-AVA-03, 04, 05 | UC-AVA-01 | TL-AVA-02 | CA-AVA-02.1, 02.2 | Must | Definido |
-| RF-AVA-03 | T5 | NEC-AVA-03 | — | RD-AVA-05, 07 | UC-AVA-01 | TL-AVA-02 | CA-AVA-03.1, 03.2 | Must | Definido |
-| RF-AVA-04 | T1, T4 | NEC-AVA-01 | — | RD-AVA-01, 06, 07, 08 | UC-AVA-01 | TL-AVA-03 | CA-AVA-04.1, 04.2 | Must | A confirmar (CNF-01, CNF-03) |
-| RF-AVA-05 | T6 | NEC-AVA-04 | RN-AVA-01 | RD-AVA-03, 04, 07 | UC-AVA-01 | — (cálculo interno) | CA-AVA-05.1 a 05.4 | Must | A confirmar (CNF-04) |
-| RF-AVA-06 | T6 | NEC-AVA-04 | RN-AVA-02 | RD-AVA-03, 06 | UC-AVA-01 | — (cálculo interno) | CA-AVA-06.1 a 06.5 | Must | A confirmar (CNF-04) |
-| RF-AVA-07 | T8 | NEC-AVA-05 | — (TBD-EXP-11) | RD-AVA-01, 06, 09 | UC-AVA-02 | TL-AVA-04 | CA-AVA-07.1 a 07.4 | Must | A confirmar (CNF-02) |
-| RF-AVA-08 | T8 | NEC-AVA-06 | RN-AVA-04 | RD-AVA-01, 02, 09 | UC-AVA-03 | TL-AVA-05 | CA-AVA-08.1 a 08.6 | Must | A confirmar (CNF-04, CNF-05) |
-| RF-AVA-09 | T8 | NEC-AVA-07 | RN-AVA-03 | RD-AVA-01, 09 | UC-AVA-04 | TL-AVA-06 | CA-AVA-09.1 a 09.5 | Must | A confirmar (CNF-04) |
+| Requisito | Fonte (EL-04) | Necessidade | Regra | Dados (AN-03) | Caso de uso | Tela | Critérios | Pendências | Prior. | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| RF-AVA-01 | T1, T4 | NEC-AVA-01 | — | RD-AVA-01, 06 | UC-AVA-01 | TL-AVA-01 | CA-AVA-01.1, 01.2 | TBD-EXP-03, 14 | Must | Definido |
+| RF-AVA-02 | T2, T3, T5, T7 | NEC-AVA-02, 03 | — | RD-AVA-03, 04, 05 | UC-AVA-01 | TL-AVA-02 | CA-AVA-02.1, 02.2 | TBD-EXP-05, 06, 07, 23; AMB-EXP-02, 04, 07 | Must | Definido |
+| RF-AVA-03 | T5 | NEC-AVA-03 | — | RD-AVA-05, 07 | UC-AVA-01 | TL-AVA-02 | CA-AVA-03.1, 03.2 | TBD-EXP-08, 10 | Must | Definido |
+| RF-AVA-04 | T1, T4 | NEC-AVA-01 | — | RD-AVA-01, 06, 07, 08 | UC-AVA-01 | TL-AVA-03 | CA-AVA-04.1, 04.2 | TBD-EXP-01, 02, 04 (em parte), 10, 24, 26, 28; AMB-EXP-01; CNF-03 | Must | Definido |
+| RF-AVA-05 | T6 | NEC-AVA-04 | RN-AVA-01 | RD-AVA-03, 04, 07 | UC-AVA-01 | — (cálculo interno) | CA-AVA-05.1 a 05.4 | TBD-EXP-09, 10, 23; AMB-EXP-06 | Must | Definido |
+| RF-AVA-06 | T6 | NEC-AVA-04 | RN-AVA-02 | RD-AVA-03, 06 | UC-AVA-01 | — (cálculo interno) | CA-AVA-06.1 a 06.5 | TBD-EXP-09, 23 | Must | Definido |
+| RF-AVA-07 | T8 | NEC-AVA-05 | — (regra definida por e-mail, ainda sem ID no ES-04) | RD-AVA-01, 06, 09 | UC-AVA-02 | TL-AVA-04 | CA-AVA-07.1 a 07.4 | TBD-EXP-15, 16, 17, 19, 21, 23; AMB-EXP-08; CNF-02 | Must | Definido |
+| RF-AVA-08 | T8 | NEC-AVA-06 | RN-AVA-04 | RD-AVA-01, 02, 09 | UC-AVA-03 | TL-AVA-05 | CA-AVA-08.1 a 08.6 | TBD-EXP-12 (em parte), 13, 15, 17, 21, 23; AMB-EXP-05; CNF-05 | Must | Definido |
+| RF-AVA-09 | T8 | NEC-AVA-07 | RN-AVA-03 | RD-AVA-01, 09 | UC-AVA-04 | TL-AVA-06 | CA-AVA-09.1 a 09.5 | TBD-EXP-15, 17, 23 | Must | Definido |
 
-Fonte: elaborada pelos autores com base no EL-04, EL-06, AN-03, ES-02, ES-04,
-ES-06, ES-07 e VA-04.
+Fonte: elaborada pelos autores com base no EL-04, EL-05, EL-06, AN-03, ES-02,
+ES-04, ES-06, ES-07, VA-04 e em (OLIVEIRA, 2026b).
 
 ## 3.8.3 Matriz vertical — app atual
 
@@ -95,7 +112,7 @@ funcionalidade do enunciado.
 
 | Requisitos | Fonte (EL-03) | Necessidade | Caso de uso | Critérios | Prioridade (AN-06) | Status |
 |---|---|---|---|---|---|---|
-| RF-SEG-01 a RF-SEG-10 | 1.3.1 Segurança | NEC-ATU-01 | — | — | Won't (aplicativo externo) | A confirmar (Dupla A) |
+| RF-SEG-01 a RF-SEG-10 | 1.3.1 Segurança | NEC-ATU-01 | — | — | Won't (aplicativo externo, confirmado pelo docente: OLIVEIRA, 2026b) | Identificado (a Dupla A ajusta o ES-01) |
 | RF-RAD-01, RF-RAD-02 | 1.3.2 Rádio | NEC-ATU-02 | — | — | Must | Definido |
 | RF-GUI-01 | 1.3.3 Guia Estudantil | NEC-ATU-03 | — | — | Must | Definido |
 | RF-EVE-01 a RF-EVE-03 | 1.3.4 Eventos | NEC-ATU-04 | — | — | Must | Definido |
@@ -147,11 +164,12 @@ revisão do requisito da primeira coluna.
 | RF-AVA-04 | RF-AVA-01, RF-AVA-03 | O registro exige a UA selecionada e as notas atribuídas |
 | RF-AVA-05 | RF-AVA-04; RN-AVA-01 | Calcula sobre a avaliação registrada, pela regra |
 | RF-AVA-06 | RF-AVA-05; RN-AVA-02 | A nota final usa as notas das dimensões |
-| RF-AVA-07 | RF-AVA-06 | A nota da UA usa as notas finais das avaliações (regra pendente: TBD-EXP-11) |
-| RF-AVA-08 | RF-AVA-06; RN-AVA-04 | A média por Área de Conhecimento usa as notas das UAs |
-| RF-AVA-09 | RF-AVA-06; RN-AVA-03 | A nota da UFG usa as notas das UAs |
+| RF-AVA-07 | RF-AVA-06 | A nota da UA é a média simples das notas finais das Avaliações da UA (OLIVEIRA, 2026b) |
+| RF-AVA-08 | RN-AVA-04 | A média por Área de Conhecimento usa valores ligados às UAs da Área; quais valores entram está em aberto (TBD-EXP-12), por isso a matriz não liga o RF-AVA-08 a outro RF |
+| RF-AVA-09 | RF-AVA-07; RN-AVA-03 | A nota da UFG é a média das notas das UAs |
 | RN-AVA-02 | RN-AVA-01 | Média das notas das dimensões |
-| RN-AVA-03, RN-AVA-04 | RN-AVA-02 | Médias sobre as notas das UAs |
+| RN-AVA-03 | Nota da UA (RF-AVA-07) | A regra usa a nota de cada UA, e não a nota final da Avaliação diretamente |
+| RN-AVA-04 | — (TBD-EXP-12, TBD-EXP-13) | Os valores que entram na média e a Área de cada UA estão em aberto |
 | RNF-AVA-01, RNF-AVA-03, RNF-AVA-04 | RF-AVA-04 | Restringem o registro da avaliação |
 | RNF-AVA-02 | RF-AVA-07, RF-AVA-08, RF-AVA-09 | Restringe a exibição das notas |
 | RNF-AVA-05 | Todos os RF do ES-01 | Garante que o comportamento atual seja mantido |
@@ -163,33 +181,46 @@ revisão do requisito da primeira coluna.
 | RF-RU-02, RF-RU-03, RF-RU-04 | RF-RU-01 | Partem do card de refeição selecionado |
 | RF-APP-02 | RF-APP-01 | Parte do card do aplicativo |
 
-Fonte: elaborada pelos autores com base no ES-01, ES-02, ES-03 e ES-04.
+Fonte: elaborada pelos autores com base no ES-01, ES-02, ES-03, ES-04 e em
+(OLIVEIRA, 2026b).
 
 ## 3.8.6 Análise de impacto: exemplos
 
-**Exemplo 1 — Decisão do CNF-01 (anonimato × avaliação repetida).** Se o
-docente escolher a avaliação identificada, a matriz mostra o que precisa ser
-revisto:
+**Exemplo 1 — Impacto real do e-mail do docente de 03/11/2026.** O docente
+definiu que a nota da UA é a média simples das notas finais das Avaliações e
+que as Avaliações são anônimas e podem ser repetidas (OLIVEIRA, 2026b). A
+Tabela 5 mostra o que a matriz indica para revisar.
+
+**Tabela 5 – Impacto da resposta do docente**
 
 | Eixo | Elementos a revisar |
 |---|---|
-| Vertical | RF-AVA-04 → RD-AVA-06 e RD-AVA-08 → UC-AVA-01 → TL-AVA-01 e TL-AVA-03 → CA-AVA-04.1 e 04.2 |
-| Horizontal | RNF-GER-01 a RNF-GER-03, que depois passam a tratar dado pessoal ligado à opinião |
+| Vertical | RF-AVA-07 → regra da nota da UA, a incluir no ES-04 → RD-AVA-09 → UC-AVA-02 → TL-AVA-04 → CA-AVA-07.1 a 07.4 |
+| Vertical | RF-AVA-04 → RD-AVA-06 e RD-AVA-08 → UC-AVA-01 → TL-AVA-03 → CA-AVA-04.1 e 04.2 (anonimato e repetição) |
+| Horizontal | RF-AVA-09 e RN-AVA-03, que usam a nota da UA; RNF-GER-01 a RNF-GER-03, porque a Avaliação anônima não liga dado pessoal à opinião |
 
-**Exemplo 2 — Definição do tipo de média (TBD-EXP-12).** Se a média for
-ponderada, a matriz mostra o que precisa ser revisto:
+Fonte: elaborada pelos autores com base nas Tabelas 1 e 4 e em (OLIVEIRA,
+2026b).
+
+**Exemplo 2 — Pendência ainda aberta: Área de Conhecimento (TBD-EXP-13).**
+Quando a equipe ou o docente definir o nível da classificação do CNPq e a Área
+de cada UA, a matriz mostra o que precisa ser revisto (Tabela 6).
+
+**Tabela 6 – Impacto da definição da Área de Conhecimento**
 
 | Eixo | Elementos a revisar |
 |---|---|
-| Vertical | RN-AVA-01 a RN-AVA-04 → RF-AVA-05, 06, 08 e 09 → CA-AVA-05.x, 06.x, 08.x e 09.x |
-| Horizontal | RF-AVA-07, que depende do RF-AVA-06 |
+| Vertical | RF-AVA-08 → RN-AVA-04 → RD-AVA-01 e RD-AVA-02 → UC-AVA-03 → TL-AVA-05 → CA-AVA-08.1 a 08.6 |
+| Horizontal | RNF-AVA-02, que restringe a exibição das notas |
+
+Fonte: elaborada pelos autores com base nas Tabelas 1 e 4.
 
 ## 3.8.7 Análise de cobertura
 
 Esta é a análise de cobertura prevista no `VA-01` (atividade VAL-04). Ela confere
-o critério de saída CS-05 e parte do CS-03. A Tabela 5 apresenta o resultado.
+o critério de saída CS-05 e parte do CS-03. A Tabela 7 apresenta o resultado.
 
-**Tabela 5 – Cobertura da rastreabilidade**
+**Tabela 7 – Cobertura da rastreabilidade**
 
 | Verificação | Avaliação de UA | App atual | Qualidade |
 |---|---|---|---|
@@ -200,7 +231,11 @@ o critério de saída CS-05 e parte do CS-03. A Tabela 5 apresenta o resultado.
 | Todo requisito tem critério de aceitação ou métrica (CS-03, CS-04) | Sim: CA-AVA para os 9 RF | **Não**: o VA-04 não cobre o ES-01 (lacuna L4) | Sim: métrica e valor-alvo no ES-03 |
 | IDs únicos | **Não**: colisão de RF-AVA com o rascunho da Dupla A (lacuna L5) | Sim | Sim |
 
-**Lacunas a resolver antes da entrega:**
+Fonte: elaborada pelos autores com base nas Tabelas 1 a 4.
+
+A Tabela 8 lista as lacunas a resolver antes da entrega.
+
+**Tabela 8 – Lacunas de rastreabilidade**
 
 | ID | Lacuna | Quem resolve | Item |
 |---|---|---|---|
@@ -230,7 +265,9 @@ Fonte: elaborada pelos autores.
   Pessoais (LGPD). Brasília, DF: Presidência da República, 2018.
 - OLIVEIRA, J. L. *Requisitos de Software: conceitos fundamentais; técnicas e
   ferramentas; SQuaRE, família ISO 25000.* Slides de aula da disciplina
-  INF0339 – Engenharia de Requisitos. Goiânia: INF/UFG, 2026.
+  INF0339 – Engenharia de Requisitos. Goiânia: INF/UFG, 2026a.
+- OLIVEIRA, J. L. **[Respostas às dúvidas da Equipe Sul sobre a APS]**.
+  Destinatário: Equipe Sul. Goiânia, 3 nov. 2026b. 1 mensagem eletrônica.
 - UNIVERSIDADE FEDERAL DE GOIÁS (UFG). Instituto de Informática. *Definição de
   Atividades Práticas Supervisionadas (APS) da disciplina: INF0339 – Engenharia
   de Requisitos, semestre 2026/2.* Goiânia: UFG, 2026. Apêndice A: Domínio do
