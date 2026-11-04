@@ -5,8 +5,8 @@
 | **ID** | `AN-06` |
 | **Autoria** | Dupla C: João Victor Borges Tavares (responsável); Tales Ian Costa Barkema |
 | **Revisão** | Dupla B: Nicole Cabral Lopes Dantas; Cali Freitas Silva |
-| **Versão / data** | 0.1 (rascunho), 2026-11-02 |
-| **Técnica / linguagem** | Classificação por critérios de valor, penalidade e custo (OLIVEIRA, 2026), na escala MoSCoW com equivalência à escala obrigatório / desejável / opcional |
+| **Versão / data** | 0.2 (ajustes da revisão), 2026-11-04 |
+| **Técnica / linguagem** | Classificação por critérios de valor, penalidade e custo (OLIVEIRA, 2026a), na escala MoSCoW com equivalência à escala obrigatório / desejável / opcional |
 | **Depende de** | `EL-06`, `AN-05`, `ES-01`, `ES-02`, `ES-03`, `ES-04` |
 | **Usado por** | `ES-01` a `ES-04`, `VA-04`, `ES-08` |
 
@@ -18,14 +18,14 @@ decisões. A prioridade orienta duas escolhas:
 - o que preservar quando houver conflito ou falta de recursos.
 
 Os slides apresentam a prioridade como **"base para decisões diante de recursos
-escassos"** (OLIVEIRA, 2026).
+escassos"** (OLIVEIRA, 2026a).
 
 ---
 
 ## 2.6.1 Escala de prioridade
 
 Os slides da disciplina usam a escala obrigatório / desejável / opcional
-(deve / deveria / poderia) (OLIVEIRA, 2026). Os itens já escritos pelas três
+(deve / deveria / poderia) (OLIVEIRA, 2026a). Os itens já escritos pelas três
 duplas (ES-01, ES-02, ES-03 e ES-04) usam a escala **MoSCoW**. Este item mantém
 a MoSCoW, para não trocar a prioridade de todos os requisitos às vésperas da
 entrega, e registra a equivalência entre as duas escalas na Tabela 1.
@@ -39,9 +39,11 @@ entrega, e registra a equivalência entre as duas escalas na Tabela 1.
 | Could | Opcional (poderia) | Detalhe de conveniência ou de apresentação; pouca perda se ficar de fora |
 | Won't | Sem equivalente: fora desta versão | Não será atendido pelo aplicativo nesta versão, por estar fora do escopo ou por decisão registrada |
 
+Fonte: elaborada pelos autores com base em (OLIVEIRA, 2026a).
+
 ## 2.6.2 Critérios
 
-Os slides indicam três fatores para priorizar um requisito (OLIVEIRA, 2026):
+Os slides indicam três fatores para priorizar um requisito (OLIVEIRA, 2026a):
 
 - o **valor** que ele agrega ao sistema;
 - a **penalidade** causada por não tê-lo;
@@ -62,11 +64,13 @@ primeira regra que se aplica.
 | R5 | Valor **Alto** ou **Médio**, mas penalidade Média ou Baixa | Should |
 | R6 | Valor **Baixo** e penalidade **Baixa** (detalhe de interface ou de conveniência) | Could |
 
+Fonte: elaborada pelos autores com base em (OLIVEIRA, 2026a).
+
 O custo entrou como critério de desempate entre Should e Could. Ele não
 rebaixa um requisito obrigatório por lei ou pelo enunciado.
 
 **App atual.** As funcionalidades atuais já existem: o status delas é "atendido
-(implementado)" (OLIVEIRA, 2026). Para elas, a prioridade indica o quanto o
+(implementado)" (OLIVEIRA, 2026a). Para elas, a prioridade indica o quanto o
 comportamento precisa ser **preservado** quando a avaliação de UA for incluída
 (`NEC-GER-04`, `RNF-AVA-05`).
 
@@ -87,6 +91,8 @@ deste item. Os requisitos sem mudança aparecem resumidos no fim da tabela.
 | RF-NOT-03, RF-LOC-06, RF-RU-04 | Should | Should | R5 | Facilitam o uso, mas o módulo continua útil sem eles. |
 | RF-RU-05 | Could | Could | R6 | Aviso informativo, de baixo valor e baixa penalidade. |
 
+Fonte: elaborada pelos autores com base no ES-01 e no EL-03.
+
 **Racional das mudanças:**
 
 - **Módulo Segurança (RF-SEG-01 a RF-SEG-10).** O enunciado descreve a
@@ -99,7 +105,9 @@ deste item. Os requisitos sem mudança aparecem resumidos no fim da tabela.
   - **Requisito que falta no ES-01:** o Minha UFG deve abrir o aplicativo de
     Segurança ou a versão web dele, e levar à loja de aplicativos quando ele não
     estiver instalado. Esse requisito seria Must, pela regra R2.
-  - **Decisão:** a decisão final é da Dupla A e deve ser registrada no `AN-05`.
+  - **Decisão:** o docente confirmou, no e-mail de 03/11/2026, que chamado e
+    SOS são funções do aplicativo de Segurança (OLIVEIRA, 2026b). A Dupla A
+    ajusta o ES-01, e a decisão é registrada no `AN-05`.
 - **RF-NOT-04.** Voltar à quantidade inicial de notícias ao sair do módulo é um
   comportamento observado de baixo valor para o usuário. Se faltar, a
   penalidade é baixa.
@@ -112,7 +120,10 @@ deste item. Os requisitos sem mudança aparecem resumidos no fim da tabela.
 O enunciado usa "deve" para todas as funcionalidades da evolução (UFG, 2026). A
 Dupla B classificou todos os requisitos e regras como Must, e este item
 **confirma** essa classificação pelas regras R2 e R3. A Tabela 4 mostra o
-racional e a ordem de dependência, que define a sequência de detalhamento.
+racional e a ordem de dependência, que define a sequência de detalhamento. Ela
+já considera o e-mail do docente de 03/11/2026 (OLIVEIRA, 2026b): a nota da UA
+é a média das notas finais das Avaliações, as médias são aritméticas simples e
+as Avaliações são anônimas e podem ser repetidas.
 
 **Tabela 4 – Prioridades da avaliação de qualidade de UA**
 
@@ -120,25 +131,33 @@ racional e a ordem de dependência, que define a sequência de detalhamento.
 |---|---|---|---|
 | RF-AVA-01, RF-AVA-02 | Must | R3 | Sem selecionar a UA e ver as questões, não há avaliação. RF-AVA-03 e RF-AVA-04 dependem deles. |
 | RF-AVA-03, RF-AVA-04 | Must | R2 | Atribuir notas e registrar a avaliação estão explícitos no enunciado. |
-| RF-AVA-05, RF-AVA-06; RN-AVA-01, RN-AVA-02 | Must | R2 | O cálculo da nota da dimensão e da nota final está explícito no enunciado. |
-| RF-AVA-07 | Must | R2 | Exibir a nota por UA está explícito. A regra de cálculo da nota da UA continua pendente (`TBD-EXP-11`). |
-| RF-AVA-08, RF-AVA-09; RN-AVA-03, RN-AVA-04 | Must | R2 | Exibir as notas por Área de Conhecimento e da UFG está explícito, com as regras de média definidas na fonte. |
+| RN-AVA-01, RN-AVA-02 | Must | R2 | O cálculo da nota da dimensão e da nota final está explícito no enunciado. |
+| RF-AVA-05, RF-AVA-06 | Must | R3 | São requisitos derivados no ES-02: a fonte define a regra de cálculo (RN-AVA-01 e RN-AVA-02), mas não quem a aplica. RF-AVA-07 a RF-AVA-09 dependem deles. |
+| RF-AVA-07 | Must | R2 | Exibir a nota por UA está explícito. A regra foi definida pelo docente: média aritmética simples das notas finais das Avaliações da UA (OLIVEIRA, 2026b), o que responde à `TBD-EXP-11`. |
+| RF-AVA-08, RF-AVA-09; RN-AVA-03, RN-AVA-04 | Must | R2 | Exibir as notas por Área de Conhecimento e da UFG está explícito. As médias são simples (OLIVEIRA, 2026b), mas os valores que entram na média da Área continuam em aberto (`TBD-EXP-12`). |
+
+Fonte: elaborada pelos autores com base no ES-02, no ES-04 e em (OLIVEIRA, 2026b).
 
 > Os requisitos `RF-AVA-01` a `RF-AVA-08` que aparecem no rascunho da Dupla A
 > **não foram priorizados**: eles repetem IDs do ES-02 com outro conteúdo (ver
 > AN-01, seção 2.1.6). A evolução é especificada só no ES-02.
 
-**Requisitos afetados por conflitos em aberto.** A prioridade não muda
-enquanto o conflito está em aberto, mas a decisão pode alterar o enunciado do
-requisito. Na classificação dos slides, esses requisitos são **voláteis**
-(OLIVEIRA, 2026):
+**Requisitos afetados por conflitos.** A prioridade não muda enquanto o
+conflito está em aberto, mas a decisão pode alterar o enunciado do requisito.
+Na classificação dos slides, esses requisitos são **voláteis** (OLIVEIRA,
+2026a). A Tabela 5 mostra a situação de cada conflito depois do e-mail do
+docente.
 
-| Conflito | Requisitos afetados |
-|---|---|
-| CNF-01 | RF-AVA-04 |
-| CNF-02 | RF-AVA-07 |
-| CNF-04 | RN-AVA-01 a RN-AVA-04 |
-| CNF-05 | RF-AVA-08 e RN-AVA-04 |
+**Tabela 5 – Conflitos que afetam os requisitos da avaliação de UA**
+
+| Conflito | Requisitos afetados | Situação |
+|---|---|---|
+| CNF-01 | RF-AVA-04 | **Resolvido.** As Avaliações são anônimas e podem ser repetidas (OLIVEIRA, 2026b) |
+| CNF-02 | RF-AVA-07 | Em aberto |
+| CNF-04 | RN-AVA-01 a RN-AVA-04 | **Parcialmente resolvido.** As médias são simples (OLIVEIRA, 2026b); os valores da média da Área continuam em aberto (`TBD-EXP-12`) |
+| CNF-05 | RF-AVA-08 e RN-AVA-04 | Em aberto |
+
+Fonte: elaborada pelos autores com base no AN-05 e em (OLIVEIRA, 2026b).
 
 ## 2.6.5 Prioridades — requisitos de qualidade (ES-03)
 
@@ -147,7 +166,7 @@ de uma necessidade confirmada sejam Must, e os de valor proposto pela equipe
 sejam Should. A proposta é a mesma das regras R2 e R5, e este item a
 **confirma**.
 
-**Tabela 5 – Prioridades dos requisitos de qualidade**
+**Tabela 6 – Prioridades dos requisitos de qualidade**
 
 | Requisitos | Prioridade | Regra | Racional |
 |---|---|---|---|
@@ -157,9 +176,11 @@ sejam Should. A proposta é a mesma das regras R2 e R5, e este item a
 | RNF-AVA-05 | Must | R4 | A evolução não pode quebrar as funcionalidades atuais (`NEC-GER-04`). |
 | RNF-AVA-01 a RNF-AVA-04, RNF-AVA-06, RNF-AVA-07 | Should | R5 | Os valores (tempo, disponibilidade, reenvio) foram propostos pela equipe e valem só depois de aceitos pelo docente. |
 
+Fonte: elaborada pelos autores com base no ES-03.
+
 ## 2.6.6 Resumo
 
-**Tabela 6 – Quantidade de requisitos por prioridade proposta**
+**Tabela 7 – Quantidade de requisitos por prioridade proposta**
 
 | Item | Must | Should | Could | Won't | Total |
 |---|---|---|---|---|---|
@@ -167,6 +188,8 @@ sejam Should. A proposta é a mesma das regras R2 e R5, e este item a
 | ES-02 e ES-04 (avaliação de UA) | 13 | 0 | 0 | 0 | 13 |
 | ES-03 (qualidade) | 8 | 6 | 0 | 0 | 14 |
 | **Total** | **37** | **10** | **3** | **10** | **60** |
+
+Fonte: elaborada pelos autores com base nas Tabelas 3, 4 e 6.
 
 ## 2.6.7 Validação das prioridades
 
@@ -202,7 +225,9 @@ item, e o motivo fica registrado no racional.
   Pessoais (LGPD). Brasília, DF: Presidência da República, 2018.
 - OLIVEIRA, J. L. *Requisitos de Software: conceitos fundamentais; técnicas e
   ferramentas; SQuaRE, família ISO 25000.* Slides de aula da disciplina
-  INF0339 – Engenharia de Requisitos. Goiânia: INF/UFG, 2026.
+  INF0339 – Engenharia de Requisitos. Goiânia: INF/UFG, 2026a.
+- OLIVEIRA, J. L. **[Respostas às dúvidas da Equipe Sul sobre a APS]**.
+  Destinatário: Equipe Sul. Goiânia, 3 nov. 2026b. 1 mensagem eletrônica.
 - UNIVERSIDADE FEDERAL DE GOIÁS (UFG). Instituto de Informática. *Definição de
   Atividades Práticas Supervisionadas (APS) da disciplina: INF0339 – Engenharia
   de Requisitos, semestre 2026/2.* Goiânia: UFG, 2026. Apêndice A: Domínio do
