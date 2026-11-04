@@ -87,7 +87,7 @@ pontos nos critérios de avaliação:
 | ID    | Item de informação | Conteúdo esperado | Autoria | Resp. | Revisão | Depende de | Status | Issue |
 |-------|--------------------|-------------------|:-------:|-------|:-------:|------------|--------|-------|
 | EL-01 | Identificação de stakeholders | Ver nota EL-01 abaixo. | A | MMRA | C | — | A fazer | [#1](https://github.com/joaovictordevcod/requirements-engineering/issues/1) |
-| EL-02 | Plano de elicitação | Técnicas escolhidas e justificadas (SWEBOK cap. 1), fontes, cronograma e roteiros. Padrão comum às duas frentes. | C | JVBT | B | EL-01 | A fazer | [#2](https://github.com/joaovictordevcod/requirements-engineering/issues/2) |
+| EL-02 | Plano de elicitação | Técnicas escolhidas e justificadas (SWEBOK cap. 1), fontes, cronograma e roteiros. Padrão comum às duas frentes. | C | JVBT | B | EL-01 | Em revisão | [#2](https://github.com/joaovictordevcod/requirements-engineering/issues/2) |
 | EL-03 | Inventário do app atual | Ver nota EL-03 abaixo. | A | GBR | C | EL-02 | A fazer | [#3](https://github.com/joaovictordevcod/requirements-engineering/issues/3) |
 | EL-04 | Análise de documentos | Ver nota EL-04 abaixo. | B | CFS | A | EL-02 | A fazer | [#4](https://github.com/joaovictordevcod/requirements-engineering/issues/4) |
 | EL-05 | Questionário e entrevistas | Instrumento aplicado à comunidade sobre a avaliação de UA (as 4 dimensões e os elementos), com consolidação anonimizada das respostas. | B | NCLD | A | EL-01, EL-02 | A fazer | [#5](https://github.com/joaovictordevcod/requirements-engineering/issues/5) |
