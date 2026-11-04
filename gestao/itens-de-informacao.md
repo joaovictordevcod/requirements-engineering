@@ -119,7 +119,7 @@ pontos nos critérios de avaliação:
 | AN-03 | Modelo conceitual do domínio (integrado) | Ver nota AN-03 abaixo. | B | CFS | A | AN-01 | A fazer | [#9](https://github.com/joaovictordevcod/requirements-engineering/issues/9) |
 | AN-04 | Diagrama de casos de uso | Atores e casos de uso do app inteiro, com a versão atual e a evolução em pacotes separados. A Dupla B fornece os casos de uso da evolução. | A | GBR | C | EL-03, EL-06 | A fazer | [#10](https://github.com/joaovictordevcod/requirements-engineering/issues/10) |
 | AN-05 | Conflitos e consistência | Conflitos entre necessidades e entre o app atual e a evolução, com a resolução adotada. Ex.: anonimato × evitar avaliações duplicadas. | C | TICB | B | EL-06, AN-03, AN-04 | A fazer | [#11](https://github.com/joaovictordevcod/requirements-engineering/issues/11) |
-| AN-06 | Priorização | Classificação MoSCoW (ou outra técnica justificada) das necessidades e dos requisitos, com o critério e os participantes. | C | JVBT | B | EL-06, AN-05 | A fazer | [#12](https://github.com/joaovictordevcod/requirements-engineering/issues/12) |
+| AN-06 | Priorização | Classificação MoSCoW (ou outra técnica justificada) das necessidades e dos requisitos, com o critério e os participantes. | C | JVBT | B | EL-06, AN-05 | Em revisão | [#12](https://github.com/joaovictordevcod/requirements-engineering/issues/12) |
 
 **Nota AN-03.** Um único diagrama de classes conceitual, com dicionário de
 dados, para o app inteiro.
